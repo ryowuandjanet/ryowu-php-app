@@ -10,7 +10,9 @@
  //include("header.php");
   session_start();
 
-    require('fpdf/fpdf.php');
+    // require('fpdf/fpdf.php');
+    include_once(dirname(__file__)."/fpdf/fpdf.php");
+
  $pdf = new FPDF('P','mm','A4');
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',16);
