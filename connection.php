@@ -1,12 +1,4 @@
-<?php
-//Get Heroku ClearDB connection information
-$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$cleardb_server = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db = substr($cleardb_url["path"],1);
-$active_group = 'default';
-$query_builder = TRUE;
-// Connect to DB
-$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-?>
+<?php 
+
+// $connect = mysqli_connect("localhost","root","","ecomm");
+$connect = mysqli_connect("us-cdbr-east-04.cleardb.com","b76b9adcbf0e1e","f3cf4696","heroku_00389e1c064314c");
