@@ -10,7 +10,7 @@ include("header.php");
 	<title></title>
 </head>
 <body>
-<?php echo dirname(__FILE__) . '\fpf\fpdf.php' ?>
+<?php echo dirname(__FILE__).DIRECTORY_SEPARATOR . '/fpf/fpdf.php' ?>
 	<div class="container-fluid my-5">
     <div class="" id="pagination">
       
