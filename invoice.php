@@ -11,7 +11,7 @@
   session_start();
 
     // require('fpdf/fpdf.php');
-    include_once(dirname(__file__).DIRECTORY_SEPARATOR ."fpdf/fpdf.php");
+    include_once(dirname(__file__).DIRECTORY_SEPARATOR ."/fpdf/fpdf.php");
 
  $pdf = new FPDF('P','mm','A4');
 $pdf->AddPage();
